@@ -7,7 +7,7 @@
     <title>Login </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body >
     <!--header start-->
     <header class="container">
  <nav>
@@ -30,6 +30,27 @@
  </nav>
     </header>
  <!--header end-->
+ <div class="login giris" style="padding:50px;">
+   <div class="login-screen">
+<div class="app-title">
+  <h1 style="margin-bottom:20px;margin-top: 20px;">Giriş Yap</h1>
+</div>
+<form action="login.php" method="POST">
+<div class="login-form">
+  <div class="control-group">
+    <input type="text" name="username" class="login-field" placeholder="Öğrenci Numaranızı Giriniz"  id="login-name">
+    <label class="login-field-icon fui-user" for="login-name"></label>
+  </div>
+  <div class="control-group">
+    <input type="password" name="password" class="login-field" placeholder="Şifrenizi Giriniz" id="login-pass">
+    <label class="login-field-icon fui-user" for="login-pass"></label>
+ </div>
+ <button name="giris" href="login.php" class="btn btn-primary btn-large btn-block">Giriş Yap</button>
+
+</div>
+</form>
+   </div>
+ </div>
  <!--footer start-->
  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
