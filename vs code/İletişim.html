@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+</head>
+<body>
+    <!--header start-->
+    <header class="container">
+ <nav>
+     <div class="logo">
+         <a href="#">ZEHRA BAK</a>
+        </div>
+<div class="menu">
+    <ul>
+        <li><a href="Anasayfa.html">Anasayfa</a></li>
+        <li><a href="Hakkında.html">Hakkında</a></li>
+        <li><a href="Özgeçmiş.html">Özgeçmiş</a></li>
+        <li><a href="Şehrim.html">Şehrim</a></li>
+        <li><a href="Mirasımız.html">Mirasımız</a></li>
+        <li><a href="İlgi Alanlarım.html">İlgi Alanlarım</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="İletişim.html">İletişim</a></li>
+    </ul>
+</div>
+     
+ </nav>
+    </header>
+ <!--header end-->
+ <div class="butun" >
+   <header >Bana Ulaşın</header>
+  
+   <form action="mesaj.php" method="POST"  name="form1" onsubmit="return ValidateForm()">
+   <div class="dbl-alan" >
+     <div class="alan">
+       <input type="text1" name="ad" placeholder="Adınızı giriniz">
+       <i class="fas fa-user"></i>
+     </div>
+     <div class="alan">
+      <input type="text2" id="e_mail" name="email" placeholder="Email adresinizi giriniz">
+      <i class="fas fa-envelope"></i>
+    </div>
+   </div>
+   <div class="dbl-alan">
+    <div class="alan">
+      <input type="text3"  id="tel" name="telefon" placeholder="Telefon numaranızı giriniz">
+      <i class="fas fa-phone-alt"></i>
+    </div>
+    <div class="alan">
+     <input type="text4" id="web" name="website" placeholder="Web sitenizi giriniz">
+     <i class="fas fa-globe"></i>
+   </div>
+  </div>
+  <div class="mesaj">
+    <textarea  id="msj"  name="mesaj" placeholder="Mesajınızı yazınız"></textarea>
+    <i class="material-icons">mesaj</i>
+  </div>
+  <div class="buton-alan">
+    <button type="submit" >Mesaj Gönder</button>
+ 
+  </div>
+  <p id="text"> </p>
+  </form>
+ </div>
+  <!--footer start-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<footer class="footer">
+    <div class="footer-picture">
+  <div class="footer-info">
+    <h4>
+      <a href="https://github.com/zehra-bak" style="font-size:50px;"> <ion-icon name="logo-github"></ion-icon></a>
+      Github
+    </h4>
+      <ul type="none">
+        <li>
+          <a href="https://goo.gl/maps/af1HXFphYJvUSPuS9"><ion-icon name="location-outline"> </ion-icon></a>
+          SAÜ Bilgisayar ve Bilişim Bilimleri Fakültesi
+        </li>
+        <li>        <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+          zehra.bak@ogr.sakarya.edu.tr</li>
+          <li>        <a href="#"><ion-icon name="phone-portrait-outline"></ion-icon></a>
+            0507 797 50 82</li>
+      </ul>
+  </div>
+    </div>
+  </footer>
+  <!--footer end-->
+  <script src="script.js"></script>
+</body>
+</html>

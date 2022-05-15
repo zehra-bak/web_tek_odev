@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    line-height: 20px;
+}
+
+a{
+    color:white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    
+}
+
+
+/*! header start */
+
+header {
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+nav ul li a:hover {
+    color: #0ba2c0;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+
+
+/*! header end */
+/*!hakkında content start */
+.container1{
+    max-width: 1300px;
+    margin:0 50px;
+}
+.container1 .content1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.container1 .content1 img{
+    width:100%;
+    max-width: 200px;
+    margin:10px 5px;
+    border-radius: 13px;
+}
+ tablo{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+ }
+logo1{
+    align-items: center;
+}
+strong{
+    font-weight:500px;
+}
+/*!hakkında content end */
+/*! section start  */
+.content {
+    color: white;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.content h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.content .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+
+.content .links a {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in;
+}
+
+.content .links a:hover {
+    background-color: #0ba2c0;
+    color: white;
+}
+
+/*! section end  */
+
+/*! responsive start */
+@media(max-width:1060px) {
+    .container {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu ul {
+        column-gap: 15px;
+    }
+}
+
+    @media(min-width:740px){
+        .container .content .yazi{
+            
+        }
+        
+    }
+@media(max-width:740px){
+    .container{
+       
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .content{
+        padding-top:50px;
+    }
+    .content h1{
+        font-size: 36px;
+    }
+    .content p{
+        font-size:16px;
+    }
+    .content .links{
+        flex-direction: column;
+        align-items: center;
+        row-gap:1rem;
+    }
+    .content .links a{
+        padding:14px;
+        width:90%;
+    }
+    
+}
+@media screen and (max-width:870px){
+.footer-info{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    text-align:center;
+    font-size:12px;
+    
+}
+}
+
+
+/*! responsive end */
+/*! footer start */
+.footer{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap; /*telefon boyutundayken aşağı satıra insin diye.*/
+    position:relative;
+    width:100%;
+    height:200px;
+    color: white;
+    
+}
+.footer-picture{
+    width:100%;
+    height:200px;
+    background-color: #1c1c1c;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.footer-info{
+position:absolute;
+top:0;
+left:0;
+display:flex;
+text-align: center;
+align-items:center;
+justify-content: space-between;
+flex-wrap: wrap;
+width:100%;
+height: 200px;
+
+}
+.footer-info h4{
+font-size:24px;
+margin:10px 50px;
+}
+.footer-info a{
+    color:white;
+    font-size: 25px;
+}
+.footer-info a:hover{
+    color:#0ba2c0;
+}
+
+/*! footer end */
+
+
+/*! özgeçmiş start */
+.resume_wrapper{
+	display: flex;
+	width: 800px;
+	margin: 50px auto;
+	background: #fff;
+	padding: 10px;
+}
+
+.resume_wrapper .resume_left{
+	width: 35%;
+	background: #26252d;
+}
+
+.resume_wrapper .resume_left .resume_image{
+	width: 100%;
+}
+
+.resume_wrapper .resume_left .resume_image img{
+	width: 100%;
+	display: block;
+}
+
+.resume_wrapper .resume_title{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 10px;
+	letter-spacing: 4px;
+}
+
+.resume_wrapper .resume_left .resume_info{
+	color: #84838b;
+}
+
+.resume_wrapper .resume_left .resume_bottom{
+	padding: 20px 30px;
+}
+
+.resume_wrapper .resume_item{
+	padding: 20px 0;
+	border-bottom: 1px solid #0175b2;
+}
+
+.resume_wrapper  .resume_item:last-child{
+	border-bottom: 0;
+}
+
+.resume_wrapper .resume_left .resume_namerole{
+	display: none;
+}
+
+.resume_wrapper .resume_namerole .name{
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 5px;
+	letter-spacing: 4px;
+}
+
+.resume_wrapper .resume_left .resume_namerole .role{
+	color: #84838b;
+}
+
+.resume_wrapper .resume_left .resume_contact .resume_info:last-child{
+	 margin-top: 10px;
+}
+
+.resume_wrapper .resume_left .resume_contact .resume_subtitle{
+	color: #fff;
+	margin-bottom: 2px;
+}
+
+.resume_wrapper .resume_left .resume_skills .skills_list{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+
+.resume_wrapper .resume_left .resume_skills .skills_list .skills_bar p{
+	position: relative;
+	width: 125px;
+    height: 20px;
+    background: #fff;
+}
+
+.resume_wrapper .resume_left .resume_skills .skills_list .skills_bar p span{	
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #0175b2;
+	width: 100%;
+	height: 100%;
+}
+
+.resume_wrapper .resume_right{
+	width: 65%;
+	padding: 20px 40px;
+	color: #26252d;
+}
+
+.resume_wrapper .resume_right .resume_namerole .name{
+	color: #26252d;
+	font-size: 32px;
+}
+
+.resume_wrapper .resume_right .resume_namerole .role{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.resume_wrapper .resume_right .resume_item .resume_title{
+	color: #26252d;
+}
+
+.resume_wrapper .resume_right .resume_data{
+	display: flex;
+}
+
+.resume_wrapper .resume_right .resume_data .year{
+	padding-right: 35px;
+	width: 115px;
+	position: relative;
+}
+
+.resume_wrapper .resume_right .resume_data .content{
+	padding-left: 35px;
+	margin-bottom: 20px;
+	width: calc(100% - 115px);
+}
+
+.resume_wrapper .resume_right .resume_data .year:before{
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border: 1px solid #26252d;
+	border-radius: 50%;
+}
+
+.resume_wrapper .resume_right .resume_data .year:after{
+	content: "";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 50%;
+    background: #0175b2;
+}
+
+.resume_wrapper .resume_right .resume_data:last-child .year:after{
+	display: none;
+}
+
+.resume_wrapper .resume_right .resmue_interests .resume_info{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.resume_wrapper .resume_right .resmue_interests .interests .int_icon{
+	font-size: 38px;
+	color: #0175b2;
+	margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 800px){
+	.resume_wrapper .resume_right .resume_namerole{
+		display: none;
+	}
+	.resume_wrapper .resume_left .resume_namerole{
+		display: block;
+	}
+	.resume_wrapper{
+		width: 95%;
+		margin: 10px auto;
+		flex-direction: column;
+	}
+	.resume_wrapper .resume_left,
+	.resume_wrapper .resume_right{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 424px){
+	.resume_wrapper .resume_right{
+		padding: 20px 30px;
+	}
+	.resume_wrapper .resume_right .resume_data{
+		flex-direction: column;
+	}
+	.resume_wrapper .resume_right .resume_data .year{
+		padding: 0;
+		margin-bottom: 5px;
+		width: 100%;
+		color: #0175b2;
+	}
+	.resume_wrapper .resume_right .resume_data .year:before,
+	.resume_wrapper .resume_right .resume_data .year:after{
+		display: none;
+	}
+	.resume_wrapper .resume_right .resume_data .content{
+		width: 100%;
+		padding: 0;
+	}
+	.resume_wrapper .resume_right .resmue_interests .interests .int_icon{
+		font-size: 24px;
+	}
+}
+/*! özgeçmiş end */
+.border-radius{
+    border-radius: 50px;
+}
+
+/* iletişim start */
+.butun{
+display:flex;
+padding:0 10px;
+align-items: center;
+justify-content: center;
+min-height:100vh;
+width:720px;
+background:#fff ;
+border-radius: 5px;
+margin-left:300px;
+border-radius: 15px;
+
+}
+.butun header{ 
+    
+    font-size: 22px;
+    font-weight: 600;
+    padding:20px 30px;
+    border-right: 1px solid #0ba2c0;
+    
+}
+
+.butun form{
+    margin:35px 30px;
+   
+}
+form .dbl-alan{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+.dbl-alan .alan{
+    height:50px;
+    
+    
+}
+form .alan input
+{
+    height:100%;
+    width:200px;
+    border-radius: 5px;
+}
+.butun form i{
+    pointer-events: none;
+}
+form .mesaj textarea{
+    height:100%;
+    width:100%;
+    outline: none;
+    padding:0 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    min-height: 120px;
+    padding:15px 20px 0 48px;
+    min-width: 100%;
+    max-width:100%;
+    min-height: 120px;
+    max-height:300px;
+}
+form .dbl-alan  .alan input:focus,
+form .mesaj textarea:focus{
+    border:2px solid #0ba2c0;
+}
+form .button-alan {
+    margin:25px 0;
+    display: flex;
+    align-items: center;
+}
+.buton-alan button{
+    font-size: 18px;
+    border:none;
+    background:#0ba2c0;
+    padding:13px 25px;
+    color:#fff;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+@media(max-width:1050px){
+    .butun header{
+        text-align: center;
+    }
+    form .dbl-alan{
+        flex-direction: column;
+        margin-bottom:0;
+    }
+    .dbl-alan .alan{
+        width:100%;
+        margin-bottom:20px;
+    }
+    .buton-alan button{
+    width:100%;
+    }
+    form .button-alan{
+     flex-direction: column;
+    }
+    .buton-alan button{
+     width:100%;
+    }
+    form .mesaj textarea{
+        resize:none;
+    }
+
+}
+/* iletişim end*/
+/* login start*/
+.giris{
+    box-sizing: border-box;
+    
+}
+.giris:focus{
+    outline: none;
+}
+.login{
+    margin:20px auto;
+    width:300px;
+   
+}
+.login-screen{
+    background-color: #fff;
+    padding:20px;
+    border-radius: 5px;
+    width:300px;
+    height:300px;
+    padding:10px 0;
+    transition: border .5s ;
+
+}
+.app-title{
+    text-align: center;
+    color:#777;
+}
+.login-form{
+    text-align: center;
+}
+.control-group{
+    margin-bottom: 10px;
+}
+.control-group input{
+    text-align: center;
+    background-color: #ECF0F1;
+    border:2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding:10px 0;
+    transition: border .5s ;
+    width:250px;
+    transition:border .5s;
+}
+.btn{
+    border:2px solid transparent;
+    background:#0ba2c0;
+    color:#ffffff;
+    font-size:16px;
+    line-height:25px;
+    padding:10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    transition:0.25s;
+    display:block;
+    width:250px;
+    margin:0 auto;
+    margin-top:5px;
+    
+}
+/* login end*/
